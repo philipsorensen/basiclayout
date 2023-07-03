@@ -1,0 +1,20 @@
+{
+    "name": "philipsorensen/basiclayout",
+    "description": "Basic layout files for Laravel.",
+    "autoload": {
+        "psr-4": {
+            "PhilipSorensen\\BasicLayout\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Philip Sørensen",
+            "email": "git@philipsoerensen.com",
+			"homepage": "https://philipsoerensen.com"
+        }
+    ],
+	"license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+	}
+}
