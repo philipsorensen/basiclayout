@@ -10,7 +10,13 @@
 	@else
 		<title>{{ config('app.name') }} | Subtitle</title>
 	@endif
+	<meta name="application-name" content="{{ config('app.name') }}" />
+	<meta name="apple-mobile-web-app-title" content="{{ config('app.name') }}" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
     <meta name="description" content="@yield('meta_description')">
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="canonical" @if (View::hasSection('canonical')) href="@yield('canonical')" @else href="{{ Request::url() }}" @endif>
 	<meta property="og:url" content="{{ Request::url() }}">
 	<meta property="og:title" @if(View::hasSection('meta_title')) content="@yield('meta_title') | {{ config('app.name') }}" @else content="{{ config('app.name') }} | Subtitle" @endif>
 	<meta property="og:description" content="@yield('meta_description')">
