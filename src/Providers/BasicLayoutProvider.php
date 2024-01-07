@@ -19,7 +19,7 @@ class BasicLayoutProvider extends ServiceProvider
 			__DIR__.'/../public' => public_path(''),
 		], 'layout-assets');
 		$this->publishes([
-			__DIR__.'/../resources/views' => resource_path('views/layout'),
+			__DIR__.'/../resources/views/layout' => resource_path('views/layout'),
 		], 'layout-assets');
 	}
 }
