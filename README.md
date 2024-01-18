@@ -1,18 +1,16 @@
-This is a basic layout package. 
+This is a basic layout package containing a basic layout and some simple forms.
 
 ## Installation
 
+Install using:
+
 > composer require philipsorensen/basiclayout
 
-Add the following to config/app.php under 'providers':
-
-> PhilipSorensen\BasicLayout\Providers\BasicLayoutProvider::class,
-
-Run
+Run the following command:
 
 > php artisan vendor:publish --tag=layout-assets
 
-This moves files into the public and ressources folders. 
+This moves files into the ressources folders. 
 
 Use the basic layout in your view files with like this: 
 
