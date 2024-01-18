@@ -13,10 +13,10 @@ class BasicLayoutProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->loadViewsFrom(__DIR__.'/../resources', 'basiclayout');
-
+		$this->loadTranslationsFrom(__DIR__.'/../lang', 'basiclayout');
+		$this->loadViewsFrom(__DIR__.'/../resources/views', 'basiclayout');
 		$this->publishes([
-			__DIR__.'/../resources/layout' => resource_path('layout'),
+			__DIR__.'/../resources/views/layout' => resource_path('views/layout'),
 		], 'layout-assets');
 	}
 }
