@@ -16,7 +16,7 @@
 	"license": "MIT",
     "minimum-stability": "stable",
     "require": {
-		"philipsorensen/formcomponents": "^1.0.24"
+		"philipsorensen/formcomponents": "^1.0.25"
 	},
 	"extra": {
 		"laravel": {
