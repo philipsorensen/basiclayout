@@ -17,6 +17,9 @@ class BasicLayoutProvider extends ServiceProvider
 		$this->loadViewsFrom(__DIR__.'/../resources/views', 'basiclayout');
 		$this->publishes([
 			__DIR__.'/../resources/views/layout' => resource_path('views/layout'),
+
+			__DIR__.'/../resources/css' => resource_path('css'),
+			__DIR__.'/../resources/js' => resource_path('js'),
 		], 'layout-assets');
 	}
 }
