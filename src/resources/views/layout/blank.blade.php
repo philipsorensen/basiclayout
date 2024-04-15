@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	@if (View::hasSection('meta_title'))
-		@if (strlen(View::getSection('meta_title')) <= 82)
+		@if ((strlen(View::getSection('meta_title')) + strlen(config('app.name')) + 3) <= 70)
 			<title>@yield('meta_title') | {{ config('app.name') }}</title>
 			<meta property="og:title" content="@yield('meta_title') | {{ config('app.name') }}" />
 		@else
